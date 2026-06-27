@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EcoXplore Adventures - Home</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="indexss.css" rel="stylesheet">
+</head>
+<body>
+
+    <!-- Navigation Bar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-success">
+        <div class="container">
+            <a class="navbar-brand fw-bold" href="index.html">🌿 EcoXplore Adventures</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav" aria-controls="mainNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="mainNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link active" href="index.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="about.html">About Us</a></li>
+                    <li class="nav-item"><a class="nav-link" href="tours.html">Tours &amp; Packages</a></li>
+                    <li class="nav-item"><a class="nav-link" href="gallery.html">Gallery</a></li>
+                    <li class="nav-item"><a class="nav-link" href="booking.html">Book Now</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <div class="hero">
+        <div class="container">
+            <h1 class="display-5">Welcome to EcoXplore Adventures</h1>
+            <p class="lead mt-3">Experience the wild the eco-friendly way. Hiking, camping, cycling, and rafting tours designed for nature lovers.</p>
+
+           
+            <div class="d-flex flex-column flex-sm-row justify-content-center gap-2 mt-4">
+                <button class="btn btn-light btn-lg" onclick="goTo('tours.html')">View Our Tours</button>
+                <button class="btn btn-outline-light btn-lg" onclick="goTo('booking.html')">Book Now</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Why Choose Us Section -->
+    <div class="container py-5 section-pad">
+        <div class="row">
+            <div class="col-12 text-center mb-4">
+                <h2>Why Choose EcoXplore?</h2>
+                <p class="text-muted">We believe adventure and sustainability go hand in hand.</p>
+            </div>
+
+           
+            <div class="col-12 col-md-4 text-center mb-4">
+                <h4> Eco-Friendly</h4>
+                <p>All our tours follow leave-no-trace principles to protect the natural environment.</p>
+            </div>
+            <div class="col-12 col-md-4 text-center mb-4">
+                <h4> Expert Guides</h4>
+                <p>Our certified guides bring years of outdoor experience to every single trip.</p>
+            </div>
+            <div class="col-12 col-md-4 text-center mb-4">
+                <h4> Community First</h4>
+                <p>We work with local communities to support sustainable and responsible tourism.</p>
+            </div>
+        </div>
+        <div class="text-center mt-2">
+            <button class="btn btn-success" onclick="goTo('about.html')">Learn More About Us</button>
+        </div>
+    </div>
+
+    <!-- Featured Tours Section -->
+    <div class="bg-light py-5">
+        <div class="container">
+            <h2 class="text-center mb-4">Featured Tours</h2>
+            <div class="row">
+
+                
+                <div class="col-12 col-md-4 mb-4">
+                    <div class="card h-100">
+                        <img src="https://cdn.kimkim.com/files/a/content_articles/featured_photos/cb92c4ccf7db5ab1b28f2f7056717b3fa62ed533/big-71467201bc1125775735c5d15026dcc1.jpg" class="card-img-top w-100 h-100" alt="Mountain Hiking Tour">
+                        <div class="card-body">
+                            <h5 class="card-title"> Mountain Hiking</h5>
+                            <p class="card-text">Trek through stunning mountain trails and enjoy breathtaking views with our expert team.</p>
+                        </div>
+                        <div class="card-footer">
+                            <button class="btn btn-success w-100" onclick="goTo('tours.html')">See Details</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-12 col-md-4 mb-4">
+                    <div class="card h-100">
+                        <img src="https://cf.bstatic.com/xdata/images/hotel/max1024x768/323990385.jpg?k=cad1df0156d9bce4df3bc37e9401f4634cea28a9e0aa313c2d5ebed10d2e472d&o=" class="card-img-top w-100 h-100" alt="Eco Camping Tour">
+                        <div class="card-body">
+                            <h5 class="card-title"> Eco Camping</h5>
+                            <p class="card-text">Sleep under the stars in our sustainable eco-friendly campsites deep in nature.</p>
+                        </div>
+                        <div class="card-footer">
+                            <button class="btn btn-success w-100" onclick="goTo('tours.html')">See Details</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-12 col-md-4 mb-4">
+                    <div class="card h-100">
+                        <img src="https://www.kitulgalarafting.com/images/rafting7.jpg" class="card-img-top w-100 h-100" alt="River Rafting Tour">
+                        <div class="card-body">
+                            <h5 class="card-title"> River Rafting</h5>
+                            <p class="card-text">Experience the thrill of white water rafting on our guided and fully safe river tours.</p>
+                        </div>
+                        <div class="card-footer">
+                            <button class="btn btn-success w-100" onclick="goTo('tours.html')">See Details</button>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <div class="text-center mt-2">
+                <button class="btn btn-success btn-lg" onclick="goTo('tours.html')">View All Tours</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Gallery Preview Section -->
+    <div class="container py-5">
+        <h2 class="text-center mb-4">A Glimpse of Our Adventures</h2>
+
+        
+        <div class="row g-2">
+            <div class="col-12 col-md-4 mb-2">
+                <img src="https://i.natgeofe.com/n/7d5c3085-acc0-48eb-976b-ca3661047c7f/srilanka_IMG_0645_copy-Enhanced-SR_HR.jpg" class="img-fluid rounded w-100" alt="Adventure photo 1" style="object-fit: cover; height: 200px;">
+            </div>
+            <div class="col-12 col-md-4 mb-2">
+                <img src="https://www.pelago.com/img/products/LK-Sri%20Lanka/overnight-adventure-camping-at-knuckles/0c2f9173-4c8f-42cd-8d54-c6a01f9d2b5a_overnight-adventure-camping-at-knuckles.jpg" class="img-fluid rounded w-100" alt="Adventure photo 2" style="object-fit: cover; height: 200px;">
+            </div>
+            <div class="col-12 col-md-4 mb-2">
+                <img src="https://img.redbull.com/images/c_limit,w_1500,h_1000/f_auto,q_auto/redbullcom/2016/02/16/1331777047411_1/a-pair-of-mountain-bikers-riding-in-the-dolomites-range-in-north-eastern-italy" class="img-fluid rounded w-100" alt="Adventure photo 3" style="object-fit: cover; height: 200px;">
+            </div>
+        </div>
+
+        <div class="text-center mt-4">
+            <button class="btn btn-success" onclick="goTo('gallery.html')">View Full Gallery</button>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <p class="mb-1">© 2024 EcoXplore Adventures. All rights reserved.</p>
+            <p class="mb-0"> <a href="mailto:info@ecoxplore.com">info@ecoxplore.com</a> &nbsp;|&nbsp;  +94 70 567 3890</p>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+        function goTo(page) {
+            window.location.href = page;
+        }
+    </script>
+
+</body>
+</html>

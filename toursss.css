@@ -1,0 +1,56 @@
+        /* ── Page Header ── */
+        .page-header {
+            background-color: #1a7340;
+            color: white;
+            padding: 50px 20px;
+            text-align: center;
+        }
+
+        /* ── Price tag ── */
+        .price-tag {
+            font-size: 1.4rem;
+            font-weight: bold;
+            color: #1a7340;
+        }
+
+        /* ── Tour card image ── */
+        .tour-card-img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            border-radius: 4px 0 0 4px;
+        }
+
+        /* ── Footer ── */
+        footer {
+            background-color: #155724;
+            color: white;
+            padding: 25px 15px;
+            text-align: center;
+        }
+        footer a {
+            color: #cccccc;
+        }
+
+        @media (max-width: 767px) {
+
+            .page-header {
+                padding: 35px 15px;
+            }
+            .page-header h1 {
+                font-size: 1.75rem;
+            }
+
+            .tour-card-img {
+                max-height: 220px;
+                border-radius: 4px 4px 0 0;
+            }
+
+            .price-tag {
+                font-size: 1.2rem;
+            }
+
+            footer {
+                font-size: 0.9rem;
+            }
+        }

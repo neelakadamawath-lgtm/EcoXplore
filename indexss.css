@@ -1,0 +1,43 @@
+
+        /* ── Hero Section ── */
+        .hero {
+            background-color: #1a7340;
+            color: white;
+            padding: 90px 20px;
+            text-align: center;
+        }
+
+        /* ── Footer ── */
+        footer {
+            background-color: #155724;
+            color: white;
+            padding: 25px 15px;
+            text-align: center;
+        }
+        footer a {
+            color: #cccccc;
+        }
+       
+        @media (max-width: 576px) {
+
+            /* Shrink hero padding and text on small screens */
+            .hero {
+                padding: 55px 15px;
+            }
+            .hero h1 {
+                font-size: 1.8rem;
+            }
+            .hero p {
+                font-size: 1rem;
+            }
+
+            /* Make footer text slightly smaller */
+            footer {
+                font-size: 0.9rem;
+            }
+
+           .section-pad {
+                padding-top: 2.5rem;
+                padding-bottom: 2.5rem;
+            }
+        }

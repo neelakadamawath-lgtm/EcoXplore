@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gallery - EcoXplore Adventures</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="galleryss.css" rel="stylesheet">
+</head>
+<body>
+
+    <!-- Navigation Bar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-success">
+        <div class="container">
+            <a class="navbar-brand fw-bold" href="index.html">🌿 EcoXplore Adventures</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav" aria-controls="mainNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="mainNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="about.html">About Us</a></li>
+                    <li class="nav-item"><a class="nav-link" href="tours.html">Tours &amp; Packages</a></li>
+                    <li class="nav-item"><a class="nav-link active" href="gallery.html">Gallery</a></li>
+                    <li class="nav-item"><a class="nav-link" href="booking.html">Book Now</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Page Header -->
+    <div class="page-header">
+        <h1>Gallery</h1>
+        <p>Photos from our adventures — tap any image to view it larger</p>
+    </div>
+
+    <div class="container py-5">
+        
+        <!-- Hiking Photos -->
+        <h4 class="mb-3">Hiking</h4>
+        <div class="row g-2 mb-5">
+            <div class="col-6 col-md-4">
+                <img src="https://i.natgeofe.com/n/7d5c3085-acc0-48eb-976b-ca3661047c7f/srilanka_IMG_0645_copy-Enhanced-SR_HR.jpg" class="gallery-img" alt="Hiking trail through mountains" onclick="openModal(this.src, 'Hiking Trail')">
+            </div>
+            <div class="col-6 col-md-4">
+                <img src="https://www.attractionsinsrilanka.com/wp-content/uploads/2020/07/Pidurutalagala-Conservation-Forest.jpg" class="gallery-img" alt="Mountain summit view" onclick="openModal(this.src, 'Mountain Summit View')">
+            </div>
+            <div class="col-6 col-md-4">
+                <img src="https://www.remotelands.com/travelogues/app/uploads/2017/11/shutterstock_209533930.jpg" class="gallery-img" alt="Hikers on a scenic path" onclick="openModal(this.src, 'Scenic Hiking Path')">
+            </div>
+        </div>
+
+        <!-- Camping Photos -->
+        <h4 class="mb-3">Camping</h4>
+        <div class="row g-2 mb-5">
+            <div class="col-6 col-md-4">
+                <img src="https://www.pelago.com/img/products/LK-Sri%20Lanka/overnight-adventure-camping-at-knuckles/0c2f9173-4c8f-42cd-8d54-c6a01f9d2b5a_overnight-adventure-camping-at-knuckles.jpg" class="gallery-img" alt="Campsite at night" onclick="openModal(this.src, 'Campsite at Night')">
+            </div>
+            <div class="col-6 col-md-4">
+                <img src="https://media-cdn.tripadvisor.com/media/photo-s/07/0e/b6/c4/eco-island-sri-lanka.jpg" class="gallery-img" alt="Campfire in the forest" onclick="openModal(this.src, 'Campfire in the Forest')">
+            </div>
+            <div class="col-6 col-md-4">
+                <img src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/29/41/97/01/caption.jpg?w=900&h=-1&s=1" class="gallery-img" alt="Morning mist at campsite" onclick="openModal(this.src, 'Morning Mist at Camp')">
+            </div>
+        </div>
+
+        <!-- Cycling Photos -->
+        <h4 class="mb-3">Cycling</h4>
+        <div class="row g-2 mb-5">
+            <div class="col-6 col-md-4">
+                <img src="https://images.stockcake.com/public/1/d/2/1d283924-02e1-46a5-a963-345ada5a0d01_large/cycling-forest-path-stockcake.jpg" class="gallery-img" alt="Cycling through forest trail" onclick="openModal(this.src, 'Forest Trail Cycling')">
+            </div>
+            <div class="col-6 col-md-4">
+                <img src="https://img.redbull.com/images/c_limit,w_1500,h_1000/f_auto,q_auto/redbullcom/2016/02/16/1331777047411_1/a-pair-of-mountain-bikers-riding-in-the-dolomites-range-in-north-eastern-italy" class="gallery-img" alt="Mountain bike track" onclick="openModal(this.src, 'Mountain Bike Track')">
+            </div>
+            <div class="col-6 col-md-4">
+                <img src="https://www.alphonsostories.com/AlphonSoStoriesImages/SubServiceImage/cycle-to-sigiriya-rock-fortress-through-rural-villages-accompanied-by-a-local-4-AlphonSo-Stories.jpg" class="gallery-img" alt="Cycling through a village" onclick="openModal(this.src, 'Village Cycle Route')">
+            </div>
+        </div>
+
+        <!-- Rafting Photos -->
+        <h4 class="mb-3">River Rafting</h4>
+        <div class="row g-2 mb-5">
+            <div class="col-6 col-md-4">
+                <img src="https://media-cdn.tripadvisor.com/media/attractions-splice-spp-674x446/07/1e/ce/a3.jpg" class="gallery-img" alt="White water rafting" onclick="openModal(this.src, 'White Water Rafting')">
+            </div>
+            <div class="col-6 col-md-4">
+                <img src="https://riveradventure.lk/images/banana.jpg" class="gallery-img" alt="River adventure team" onclick="openModal(this.src, 'River Adventure Team')">
+            </div>
+            <div class="col-6 col-md-4">
+                <img src="https://lakpura.com/cdn/shop/files/Rivers_Template.jpg?v=1765184692&width=3840" class="gallery-img" alt="Calm section of the river" onclick="openModal(this.src, 'Calm River Section')">
+            </div>
+        </div>
+
+        <!-- Nature & Scenery -->
+        <h4 class="mb-3">Nature &amp; Scenery</h4>
+        <div class="row g-2 mb-5">
+            <div class="col-6 col-md-4">
+                <img src="https://i0.wp.com/www.sevendaysvt.com/wp-content/uploads/2019/10/ecology1-1-12156871c10d4739.webp?ssl=1" class="gallery-img" alt="Forest canopy" onclick="openModal(this.src, 'Forest Canopy')">
+            </div>
+            <div class="col-6 col-md-4">
+                <img src="https://www.srilankaclassytours.com/medias/place/big/613/thumb.jpg" class="gallery-img" alt="Waterfall in nature" onclick="openModal(this.src, 'Waterfall')">
+            </div>
+            <div class="col-6 col-md-4">
+                <img src="https://www.traumlandtours.com/wp-content/uploads/2022/09/sunrise-at-adam-peak-1090X610.jpg" class="gallery-img" alt="Sunset over the mountains" onclick="openModal(this.src, 'Mountain Sunset')">
+            </div>
+        </div>
+
+    </div>
+
+    <!-- Lightbox Modal -->
+    <div class="modal fade" id="photoModal" tabindex="-1" aria-labelledby="photoModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="photoModalLabel">Photo</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body text-center p-2">
+                    <img id="modalImage" src="" class="img-fluid" alt="Enlarged gallery photo">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <p class="mb-1">© 2024 EcoXplore Adventures. All rights reserved.</p>
+            <p class="mb-0"><a href="mailto:info@ecoxplore.com">info@ecoxplore.com</a> &nbsp;|&nbsp; +94 70 567 3890</p>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="gallery.js"></script>
+
+</body>
+</html>
